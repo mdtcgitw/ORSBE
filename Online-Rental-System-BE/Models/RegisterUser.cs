@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Online_Rental_System_BE.Models
 {
-    public class RegisterUser
+    public class RegisterUserModel
     {
         public int Id { get; set; }
         public string UserName { get; set; } = string.Empty;
@@ -17,7 +17,7 @@ namespace Online_Rental_System_BE.Models
        
     }
 
-    public class Product
+    public class ProductModel
     {
         public int Id { get; set; }
         public string Title { get; set; }

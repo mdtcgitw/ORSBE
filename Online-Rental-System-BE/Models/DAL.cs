@@ -11,7 +11,7 @@ namespace Online_Rental_System_BE.Models
         SqlCommand cmd = new SqlCommand();
         SqlDataAdapter da = new SqlDataAdapter();
         DataTable dt = new DataTable();
-        public int SignUp(RegisterUser registration)
+        public int SignUp(RegisterUserModel registration)
         {
             int i = 0;
             try
@@ -30,7 +30,7 @@ namespace Online_Rental_System_BE.Models
             }
             return i;
         }
-        public int AddDeleteProduct(Product product)
+        public int AddDeleteProduct(ProductModel product)
         {
             int i = 0;
             try
@@ -70,7 +70,7 @@ namespace Online_Rental_System_BE.Models
             }
             return dt;
         }
-        public DataTable Login(RegisterUser registration)
+        public DataTable Login(RegisterUserModel registration)
         {
             try
             {

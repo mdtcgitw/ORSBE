@@ -13,7 +13,7 @@ namespace Online_Rental_System_BE.Models
         public RegisterUser registerUser { get; set; }
         public DataTable lstRegisterUser { get; set; }
         public Product product { get; set; }
-        public DataTable lstProducts { get; set; }
+        public List<Product> lstProducts { get; set; }
     }
     public class RegistrationResponse
     {
